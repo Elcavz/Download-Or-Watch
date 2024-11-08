@@ -1,352 +1,136 @@
 <!DOCTYPE html>
-<html class='v2' dir='ltr' lang='en-US' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'
-    xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-
+<html lang="en">
 <head>
-    <link href='https://www.blogger.com/static/v1/widgets/3566091532-css_bundle_v2.css' rel='stylesheet'
-        type='text/css' />
-    <meta charset='UTF-8' />
-    <meta content='width=device-width, initial-scale=1' name='viewport' />
-    <link href='widescreen.css' media='screen and (min-width: 900px)' rel='stylesheet' />
-    <link href='smallscreen.css' media='screen and (max-width: 600px)' rel='stylesheet' />
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-    <meta content='blogger' name='generator' />
-    <link href='https://www.url2.bid/favicon.ico' rel='icon' type='image/x-icon' />
-    <link href='https://www.url2.bid/p/blog-page_25.html' rel='canonical' />
-    <link rel="alternate" type="application/atom+xml" title="Url2 - Atom"
-        href="https://www.url2.bid/feeds/posts/default" />
-    <link rel="alternate" type="application/rss+xml" title="Url2 - RSS"
-        href="https://www.url2.bid/feeds/posts/default?alt=rss" />
-    <link rel="service.post" type="application/atom+xml" title="Url2 - Atom"
-        href="https://draft.blogger.com/feeds/8392113831945822822/posts/default" />
-    <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
-    <meta content='https://www.url2.bid/p/blog-page_25.html' property='og:url' />
-    <meta content='Url2' property='og:title' />
-    <meta content='   What do you want to do?       WATCH NOW    DOWNLOAD NOW           ' property='og:description' />
-    <title>Free Download And Watch Movie</title>
-    <style id='page-skin-1' type='text/css'>
-        head {
-            width: 100%;
-        }
-
-        body {
-            background-color: #242526;
-            width: 100%;
-            height: auto;
-        }
-
-        .widget {
-            width: 50%;
-            height: auto;
-            background-color: black;
-            margin-left: 25%;
-            margin-right: 25%;
-            padding-bottom: 1%;
-            margin-top: -2%;
-        }
-
-        H4 {
-            color: white;
-        }
-
-        img {
-            border-radius: 0px;
-            width: 94%;
-            height: auto;
-            margin-left: 2%;
-        }
-
-        img .ax {
-            padding-right: 0;
-        }
-
-        h1 {
-            color: white;
-            text-align: center;
-            font-size: 1.5em;
-        }
-
-        a {
-            font-family: verdana;
-            font-size: 0.8em;
-            color: black;
-            margin: 0.5em;
-        }
-
-        /* BUTTON SETTINGS */
-        .button {
-            display: inline-block;
-            border-radius: 4px;
-            background-color: blue;
-            border: none;
-            color: #FFFFFF;
-            text-align: center;
-            font-size: 1em;
-            padding: 0.5em;
-            width: 13em;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 0.5em;
-        }
-
-        .button span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
-
-        .button span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
-
-        .button:hover span {
-            padding-right: 1em;
-        }
-
-        .button:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
-
-        /* BUTTON SETTINGS END */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch or Download Movie</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Basic reset */
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
-        H2 {
-            color: white;
-            margin-top: -10px;
-        }
-
-        /* SEARCH LIST SETTINGS */
-        #myInput {
-            background-image: url('https://d1vg9wkrun3t3k.cloudfront.net/users/0dc9db43-cb15-4e89-acf2-4d15db7dd081/forever_files/2112eaa9-eab4-48f1-974d-907bfcb58ab9/original.png?format=jpg&width=26&height=26&quality=85');
-            background-position: 8px 8px;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            width: 50%;
-            font-size: 14px;
-            padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
-            margin-bottom: 7px;
-            margin-left: 25%;
-            margin-right: 25%;
-        }
-
-        #myList {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        #myList li a {
-            border: 1px solid #545151;
-            border-radius: 15px;
-            background-color: black;
-            padding: 0px;
-            text-decoration: none;
-            font-size: 0.8em;
-            color: #a6a4a4;
-            font-weight: 900;
-            padding-left: 1%;
-            display: block
-        }
-
-        #myList li a:hover:not(.header) {
-            background-color: #636060;
-        }
-
-        /* SEARCH LIST SETTINGS END */
-        /* NAV BUTTON SETTING */
-
-        /* NAV BUTTON SETTING END*/
-        .container {
-            align-items: center;
+        /* Main container styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 12px;
-            margin-top: -16px;
-            margin-left: 1%;
-            margin-top: 1.5%;
+            min-height: 100vh;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            padding: 20px;
         }
 
-        #fb-container {
-            width: 100%;
+        /* Page layout */
+        .container {
             text-align: center;
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-        /* START RESPONSIVE MOBILE */
-        @media screen and (max-width: 700px) {
-            .widget {
-                width: 100%;
-                margin-left: 0;
-                margin-right: 0;
+        .container h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .watch-button {
+            background-color: #ff7e5f;
+            color: #fff;
+        }
+
+        .watch-button:hover {
+            background-color: #ff3d00;
+        }
+
+        .download-button {
+            background-color: #76b852;
+            color: #fff;
+        }
+
+        .download-button:hover {
+            background-color: #4caf50;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .container h1 {
+                font-size: 1.8em;
+            }
+            .button {
+                font-size: 1.1em;
+                padding: 12px;
             }
         }
 
-        #myInput {
-            background-image: url('https://d1vg9wkrun3t3k.cloudfront.net/users/0dc9db43-cb15-4e89-acf2-4d15db7dd081/forever_files/2112eaa9-eab4-48f1-974d-907bfcb58ab9/original.png?format=jpg&width=26&height=26&quality=85');
-            background-position: 8px 8px;
-            background-repeat: no-repeat;
-            width: 50%;
-            font-size: 12px;
-            padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
-            float: center;
+        /* Footer text */
+        .footer {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #ccc;
         }
 
-        .container {
-            align-items: center;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            margin-top: -16px;
-            margin-left: 1%;
-            margin-top: 1.5%;
+        /* Facebook widget styling */
+        #fb-container {
+            margin-top: 20px;
+            max-width: 100%;
+            overflow: hidden;
         }
-
-        button {
-            height: 30px;
-        }
-
-        @media screen and (max-width: 400px) {
-            .widget {
-                width: 100%;
-                margin-left: 0;
-                margin-right: 0;
-            }
-        }
-
-        #myInput {
-            background-image: url('https://d1vg9wkrun3t3k.cloudfront.net/users/0dc9db43-cb15-4e89-acf2-4d15db7dd081/forever_files/2112eaa9-eab4-48f1-974d-907bfcb58ab9/original.png?format=jpg&width=26&height=26&quality=85');
-            background-position: 8px 8px;
-            background-repeat: no-repeat;
-            width: 50%;
-            font-size: 12px;
-            padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
-            float: center;
-        }
-
-        .container {
-            align-items: center;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            margin-top: -16px;
-            margin-left: 1%;
-            margin-top: 1.5%;
-        }
-
-        /* RESPONSIVE MOBILE END */
-        -->
     </style>
-
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-    <meta name='google-adsense-platform-domain' content='blogspot.com' />
-
 </head>
-
 <body>
-    <div class='sitenbt' id='pagenbt'>
-        <div class='site-contentnbt' id='contentnbt'>
-            <div class='content-areanbt' id='primarynbt'>
-                <div class='site-mainnbt' id='mainnbt' role='main'>
-                    <div class='mainblogsec section' id='mainblogsec'>
-                        <div class='widget Blog' data-version='1' id='Blog1'>
-                            <div class='blog-posts hfeed'>
-                                <!--Can't find substitution for tag [defaultAdStart]-->
+    <div class="container">
+        <h1>Watch or Download?</h1>
+        
+        <!-- WATCH NOW Button -->
+        <button class="button watch-button" onclick="openWatch()">WATCH NOW</button>
+        
+        <!-- DOWNLOAD NOW Button -->
+        <button class="button download-button" onclick="openDownload()">DOWNLOAD NOW</button>
 
-                                <div class="date-outer">
+        <!-- Footer Text -->
+        <p class="footer">Click to start streaming or download for offline viewing.</p>
 
-
-                                    <div class="date-posts">
-
-                                        <div class='post-outer'>
-                                            <article class='post hentry'>
-                                                <div class='index-boxnbt'>
-                                                    <a name='3258398166019142934'></a>
-                                                    <div class='post-header-line-1'></div>
-                                                    <div class='post-body entry-content'
-                                                        id='post-body-3258398166019142934'>
-                                                        <center>
-                                                            <div class="container">
-                                                                <h2>What do you want to do?</h2><br>
-
-                                                                <a href="https://www.profitablecpmrate.com/pxxdimvd?key=233a523e67b83c3518e62b5ee80851ca"
-                                                                    onclick="window.open('https://elcavz-movies.site');">
-                                                                    <button class="btn btn-primary btn-lg"
-                                                                        type="button">WATCH NOW
-                                                                    </button>
-                                                                </a>
-                                                                <a href="https://www.profitablecpmrate.com/eq37j3czy?key=f297971a30f21ba3201ba33273b28d4d"
-                                                                    onclick="window.open('https://elcavz-movies.site');">
-                                                                    <button class="btn btn-primary btn-lg"
-                                                                        type="button">DOWNLOAD NOW
-                                                                    </button>
-                                                                </a>
-                                                            </div>
-                                                        </center>
-
-                                                        <div style='clear: both;'></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <div style='clear: both;'></div>
-                                            <div class='comments' id='comments'>
-                                                <a name='comments'></a>
-                                                <div id='backlinks-container'>
-                                                    <div id='Blog1_backlinks-container'>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Can't find substitution for tag [defaultAdEnd]-->
-                                        <div class='inline-ad'>
-                                        </div>
-                                        <!--Can't find substitution for tag [adStart]-->
-
-                                    </div>
-                                </div>
-
-                                <!--Can't find substitution for tag [adEnd]-->
-                            </div>
-                            <div style='clear: both;'></div>
-                            <div class='clear'></div>
-                        </div>
-                        <div class='widget HTML' data-version='1' id='HTML1'>
-                            <div class='widget-content'>
-                                <div id="fb-container">
-                                    <div class="fb-page"
-                                        data-href="https://www.facebook.com/profile.php?id=61567407801883"
-                                        data-tabs="timeline" data-width="500" data-height="70" data-small-header="false"
-                                        data-adapt-container-width="true" data-hide-cover="false"
-                                        data-show-facepile="true">
-                                        <blockquote cite="https://www.facebook.com/profile.php?id=61567407801883"
-                                            class="fb-xfbml-parse-ignore"><a
-                                                href="https://www.facebook.com/profile.php?id=61567407801883">Kabitenyo.</a>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                                <div id="fb-root"></div>
-                                <script async defer crossorigin="anonymous"
-                                    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0"></script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Facebook Widget -->
+        <img id="fb-container" src="fb-page.png" alt="fb-page logo" height="130px" width="460px">
     </div>
-</body>
 
+    <script>
+        // Function to open the "Watch Now" link
+        function openWatch() {
+            window.open('https://example.com/ad-link', '_blank'); // Ad link
+            window.location.href = 'https://example.com/watch-content'; // Legit content link
+        }
+
+        // Function to open the "Download Now" link
+        function openDownload() {
+            window.open('https://example.com/ad-link', '_blank'); // Ad link
+            window.location.href = 'https://example.com/download-content'; // Legit content link
+        }
+    </script>
+</body>
 </html>
